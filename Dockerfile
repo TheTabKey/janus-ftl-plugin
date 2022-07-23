@@ -57,7 +57,7 @@ COPY . /app
 
 RUN \
     DIR=/app && \
-    CC=gcc-10 CXX=g++-10 meson --buildtype=debugoptimized build/ && \
+    CC=gcc-11 CXX=g++-11 meson --buildtype=debugoptimized build/ && \
     cd build/ && \
     ninja && \
     ninja install
